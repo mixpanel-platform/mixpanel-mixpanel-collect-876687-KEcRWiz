@@ -32,7 +32,7 @@
             dateRange = dateSelect.MPDatepicker('value');
 
         if (eventName) {
-          MP.api.segment(eventName, propName, {from_date: '2016-07-25', to_date: '2016-07-28').done(function(results) {
+          MP.api.segment(eventName, propName, {from_date: '2016-07-25', to_date: '2016-07-28'}).done(function(results) {
             eventGraph.MPChart('setData', results);
             eventTable.MPTable('setData', results);
           });
