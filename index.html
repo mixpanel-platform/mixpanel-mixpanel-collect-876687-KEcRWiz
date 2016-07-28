@@ -27,7 +27,7 @@
       });
 
       var runQuery = function() {
-        var eventName = eventSelect.MPEventSelect('value'),
+        var eventName = '$web_event',
             propName  = propSelect.MPPropertySelect('value'),
             dateRange = dateSelect.MPDatepicker('value');
 
@@ -45,6 +45,7 @@
       });
       propSelect.on('change', runQuery);
       dateSelect.on('change', runQuery);
+      runQuery();
     </script>
   </body>
 </html>
